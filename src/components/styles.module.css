@@ -1,18 +1,24 @@
 .imgContainer {
   width: 100%;
   padding: 5px;
-  background-color: rgb(225, 222, 222);
+  background-color: rgb(24, 23, 23);
   border-radius: 10px;
+  border: 1px solid rgb(97, 96, 96);
+  margin-top: 20px;
 }
+
 .infoBlock {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  border-radius: 10px;
-  justify-content: space-evenly;
+  align-items: baseline;
+  padding: 20px;
+  border-radius: 5px;
+  justify-content: start;
+  /* border: 2px solid white; */
+  gap: 10px;
 }
+
 .root {
   width: 70%;
   height: auto;
@@ -21,6 +27,7 @@
   margin-inline: auto;
   justify-content: space-between;
   margin-block: 1rem;
+  /* background-color: cadetblue; */
 }
 
 .tshirtImg {
@@ -28,11 +35,66 @@
   height: 100%;
   border-radius: 10px;
 }
+
 .qr {
   width: 200px;
   height: 250px;
   margin-inline: 1rem;
 }
+
+.buttonpara {
+  color: antiquewhite;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.hr{
+  width: 100%;
+  color: antiquewhite;
+  margin: 20px 0px;
+  height: 0.3px;
+  opacity: 50;
+}
+
+.tablediv{
+  /* border: 2px solid whitesmoke; */
+}
+
+.tabletext{
+  color: white;
+  font-size: 16px;
+}
+
+.table{
+  /* border: 1px solid rgb(56, 54, 54); */
+  padding: 10px;
+}
+
+.tr{
+  /* border: 1px solid white; */
+}
+
+.td{
+  font-size: 14px;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid rgb(56, 54, 54);
+}
+
+.th{
+  color: antiquewhite;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid rgb(56, 54, 54);
+}
+
 
 @media (max-width: 800px) {
   .root {

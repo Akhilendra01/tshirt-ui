@@ -7,14 +7,14 @@ export default function Tshirt() {
     <Carousel withIndicators height={'auto'} className={classes.imgContainer}>
       <Carousel.Slide>
         <img
-          src="static_poter_8.png"
+          src="static_poter_4.png"
           alt="tshirt image"
           className={classes.tshirtImg}
         />
       </Carousel.Slide>
       <Carousel.Slide>
         <img
-          src="static_poter_4.png"
+          src="static_poter_8.png"
           alt="tshirt image"
           className={classes.tshirtImg}
         />

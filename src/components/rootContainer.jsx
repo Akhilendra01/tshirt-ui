@@ -19,11 +19,11 @@ import { addBuyer } from "../services/addbuyer";
 
 const sizes = ["S", "M", "L", "XL"];
 
-const price = 100;
+const price = 449;
 
 export default function RootContainer(props) {
   const { modalOpen, setModalOpen } = useContext(AppContext);
-  const quantity=useRef(1);
+  const quantity = useRef(1);
 
   const form = useForm({
     initialValues: {
@@ -54,19 +54,29 @@ export default function RootContainer(props) {
         <form
           onSubmit={form.onSubmit(async (values) => {
             console.log(values);
-            await addBuyer(values);
-            alert("Thank you, we will get in touch with you very soon");
-            setModalOpen(false);
+            addBuyer(values)
+              .then((res) => {
+                console.log(res);
+                alert("Thank you, we will get in touch with you very soon");
+                setModalOpen(false);
+              })
+              .catch((err) => {
+                console.log(err);
+              });
           })}
         >
           <Box m="xs">
             <Text align="center">Select your size</Text>
-            <SegmentedControl data={sizes} {...form.getInputProps("size")}/>
+            <SegmentedControl data={sizes} {...form.getInputProps("size")} />
           </Box>
 
           <Box m="xs">
             <Text align="center">Specify quantity</Text>
-            <NumberInput min={1} {...form.getInputProps("quantity")} ref={quantity}/>
+            <NumberInput
+              min={1}
+              {...form.getInputProps("quantity")}
+              ref={quantity}
+            />
           </Box>
           <TextInput
             placeholder="Name"
@@ -123,7 +133,13 @@ export default function RootContainer(props) {
           />
 
           <Text m="sm">
-            Total Amount to pay: <b>INR {quantity&& quantity.current? quantity.current.value * price: 0} </b>
+            Total Amount to pay:{" "}
+            <b>
+              INR{" "}
+              {quantity && quantity.current
+                ? quantity.current.value * price
+                : 0}{" "}
+            </b>
           </Text>
           <Button m="sm" type="submit">
             Submit

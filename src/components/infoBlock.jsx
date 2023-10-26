@@ -5,7 +5,7 @@ import { useForm } from "@mantine/form";
 import { AppContext } from "../context/AppContext";
 import { useContext } from "react";
 
-const price = 100;
+const price = 449;
 
 export default function InfoBlock() {
   const { setModalOpen } = useContext(AppContext);

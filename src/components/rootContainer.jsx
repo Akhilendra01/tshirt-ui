@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   FileInput,
+  Group,
   Modal,
   NumberInput,
   SegmentedControl,
@@ -67,7 +68,12 @@ export default function RootContainer(props) {
         >
           <Box m="xs">
             <Text align="center">Select your size</Text>
-            <SegmentedControl data={sizes} {...form.getInputProps("size")} color="blue" required />
+            <SegmentedControl
+              data={sizes}
+              {...form.getInputProps("size")}
+              color="blue"
+              required
+            />
           </Box>
 
           <Box m="xs">
@@ -122,8 +128,17 @@ export default function RootContainer(props) {
             required
             {...form.getInputProps("address")}
           />
-          <img src="qr.jpeg" alt="qr code" className={classes.qr} />
-
+          <Group justify="center">
+            <img src="qr.jpeg" alt="qr code" className={classes.qr} />
+          </Group>
+          <Box align="center">
+            <Text size="sm" m="xs">
+              GPAY: 8305673890
+            </Text>
+            <Text size="sm" m="xs">
+              UPI: rigveshrathore-1@oksbi
+            </Text>
+          </Box>
           <FileInput
             m="sm"
             label="Payment Screenshot"

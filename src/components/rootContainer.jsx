@@ -66,7 +66,7 @@ export default function RootContainer(props) {
               });
           })}
         >
-          <Box m="xs">
+          <Box m="xs" align="center">
             <Text align="center">Select your size</Text>
             <SegmentedControl
               data={sizes}

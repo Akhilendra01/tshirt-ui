@@ -1,7 +1,5 @@
 import classes from "./styles.module.css";
 import { Box, Button, Text } from "@mantine/core";
-
-import { useForm } from "@mantine/form";
 import { AppContext } from "../context/AppContext";
 import { useContext } from "react";
 

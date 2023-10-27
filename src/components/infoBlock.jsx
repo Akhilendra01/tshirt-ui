@@ -1,5 +1,5 @@
 import classes from "./styles.module.css";
-import { Box, Button, Text } from "@mantine/core";
+import { Box, Button, Group, Text } from "@mantine/core";
 import { AppContext } from "../context/AppContext";
 import { useContext } from "react";
 
@@ -15,9 +15,17 @@ export default function InfoBlock() {
       <Text size="45px" fw={600} c="dark.1">
         Technosearch Tshirt
       </Text>
-      <Text size="20px" fw={400} c="dark.2">
-        INR {price}.00 /-
-      </Text>
+      <Group>
+        <Text size="20px" fw={400} c="dark.2">
+          INR
+        </Text>
+        <Text size="20px" fw={400} c="dark.2" style={{textDecoration:'line-through'}}>
+          649.00 /-
+        </Text>
+        <Text size="20px" fw={400} c="dark.2">
+          {price}.00 /-
+        </Text>
+      </Group>
       <Box
         style={{
           border: "1px solid gray",

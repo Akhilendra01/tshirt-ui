@@ -32,22 +32,27 @@ export default function InfoBlock() {
           <tbody>
             <tr className={classes.tr}>
               <td className={classes.td}>Small</td>
-              <td className={classes.td}>44</td>
+              <td className={classes.td}>36</td>
               <td className={classes.td}>28</td>
             </tr>
             <tr className={classes.tr}>
               <td className={classes.td}>Medium</td>
-              <td className={classes.td}>46</td>
+              <td className={classes.td}>38</td>
               <td className={classes.td}>29</td>
             </tr>
             <tr className={classes.tr}>
               <td className={classes.td}>Large</td>
-              <td className={classes.td}>48</td>
+              <td className={classes.td}>40</td>
               <td className={classes.td}>30</td>
             </tr>
             <tr className={classes.tr}>
               <td className={classes.td}>X-Large</td>
-              <td className={classes.td}>50</td>
+              <td className={classes.td}>42</td>
+              <td className={classes.td}>31</td>
+            </tr>
+            <tr className={classes.tr}>
+              <td className={classes.td}>XX-Large</td>
+              <td className={classes.td}>44</td>
               <td className={classes.td}>31</td>
             </tr>
           </tbody>

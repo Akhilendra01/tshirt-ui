@@ -17,7 +17,7 @@ import { useForm } from "@mantine/form";
 
 import { addBuyer } from "../services/addbuyer";
 
-const sizes = ["S", "M", "L", "XL"];
+const sizes = ["S", "M", "L", "XL", "XXL"];
 
 const price = 449;
 
@@ -67,7 +67,7 @@ export default function RootContainer(props) {
         >
           <Box m="xs">
             <Text align="center">Select your size</Text>
-            <SegmentedControl data={sizes} {...form.getInputProps("size")} />
+            <SegmentedControl data={sizes} {...form.getInputProps("size")} color="blue" required />
           </Box>
 
           <Box m="xs">

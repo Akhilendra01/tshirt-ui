@@ -12,17 +12,35 @@ export default function InfoBlock() {
       <Text size="md" fs="normal" c="dark.4">
         TAX INCLUDED. SHIPPING CALCULATED AT CHECKOUT.
       </Text>
-      <Text size="45px" fw={600} c='dark.1'>
+      <Text size="45px" fw={600} c="dark.1">
         Technosearch Tshirt
       </Text>
-      <Text size='20px' fw={400} c='dark.2'>INR {price}.00 /-</Text>
+      <Text size="20px" fw={400} c="dark.2">
+        INR {price}.00 /-
+      </Text>
+      <Box
+        style={{
+          border: "1px solid gray",
+          paddingInline: "1.5rem",
+          height: "100%",
+          borderRadius: "0.5em",
+          color: "white",
+        }}
+      >
+        <ul>
+          <li>Premium quality 100% Cotton</li>
+          <li>Fabric strength - GSM 180</li>
+          <li>Comes with DTF printing.</li>
+          <li>Biowash</li>
+        </ul>
+      </Box>
       <hr className={classes.hr} />
       <div className={classes.tablediv}>
         <h1 className={classes.tabletext}>T-Shirt Size Chart</h1>
         <table className={classes.table}>
           <thead className={classes.tr}>
             <tr className={classes.tr}>
-              <th className={classes.th}>Size  (inches)</th>
+              <th className={classes.th}>Size (inches)</th>
               <th className={classes.th}>Chest (inches)</th>
               <th className={classes.th}>Length (inches)</th>
             </tr>
@@ -56,8 +74,13 @@ export default function InfoBlock() {
           </tbody>
         </table>
       </div>
-      <Box mt="md" mb='xl'>
-        <Button bg='dark.4' onClick={() => { setModalOpen(true) }}>
+      <Box mt="md" mb="xl">
+        <Button
+          bg="dark.4"
+          onClick={() => {
+            setModalOpen(true);
+          }}
+        >
           <p className={classes.buttonpara}>Proceed to pay</p>
         </Button>
       </Box>

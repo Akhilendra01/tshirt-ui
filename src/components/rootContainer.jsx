@@ -20,7 +20,7 @@ import { addBuyer } from "../services/addbuyer";
 
 const sizes = ["S", "M", "L", "XL", "XXL"];
 
-const price = 449;
+const price = 399;
 
 export default function RootContainer(props) {
   const { modalOpen, setModalOpen } = useContext(AppContext);

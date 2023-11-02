@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const price=449;
+const price=399;
 export async function addBuyer(data) {
   const fData = new FormData();
   const keys = Object.keys(data);

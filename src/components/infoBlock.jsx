@@ -3,7 +3,7 @@ import { Box, Button, Group, Text } from "@mantine/core";
 import { AppContext } from "../context/AppContext";
 import { useContext } from "react";
 
-const price = 399;
+const price = 449;
 
 export default function InfoBlock() {
   const { setModalOpen } = useContext(AppContext);
